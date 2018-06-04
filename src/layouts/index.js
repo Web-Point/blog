@@ -4,20 +4,18 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/navbar'
 
-// import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-// import './index.css'
 import './scss/clean-blog.scss'
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
-      // title={data.site.siteMetadata.title}
+      title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {/* <Navbar siteTitle={data.site.siteMetadata.title} /> */}
+    <Navbar siteTitle={data.site.siteMetadata.title} />
 
     {children()}
     

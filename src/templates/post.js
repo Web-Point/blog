@@ -6,7 +6,7 @@ import Header from '../components/header'
 const Post = ({ data }) => {
   const { title, createdAt, image, content } = data.contentfulPost
   return <div>
-    <Header title={title} image={image.responsiveResolution.src} description={content.childMarkdownRemark.excerpt} />
+      <Header title={title} image={image.resolutions.src} description={content.childMarkdownRemark.excerpt} />
       <article>
         <div class="container">
           <div class="row">
@@ -24,22 +24,21 @@ Post.PropTypes = {
 export default Post
 
 export const pageQuery = graphql`
-         query PostQuery($slug: String!) {
-           contentfulPost(slug: { eq: $slug }) {
-             title
-             createdAt(formatString: "MMMM DD, YYYY")
-             image {
-               responsiveResolution(width: 800) {
-                 src
-                 #  ...GatsbyContentfulSizes
-               }
-             }
-             content {
-               childMarkdownRemark {
-                 html
-                 excerpt
-               }
-             }
-           }
-         }
-       `
+  query PostQuery($slug: String!) {
+    contentfulPost(slug: { eq: $slug }) {
+      title
+      createdAt(formatString: "MMMM DD, YYYY")
+      image {
+        resolutions(width: 800) {
+          src
+        }
+      }
+      content {
+        childMarkdownRemark {
+          html
+          excerpt
+        }
+      }
+    }
+  }
+`
