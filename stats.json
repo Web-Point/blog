@@ -1,42 +1,48 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-9ad8fe456e433268334d.js",
-      "component---src-pages-index-js-9ad8fe456e433268334d.js.map"
+      "component---src-pages-index-js-e9ff2f2560b43df0e514.js",
+      "component---src-pages-index-js-e9ff2f2560b43df0e514.js.map"
     ],
     "path---": [
       "path----cac63ff5c1b42581353c.js",
       "path----cac63ff5c1b42581353c.js.map"
     ],
-    "cms": [
-      "cms-c943b0759e6d3d6139ff.js",
-      "cms.css",
-      "cms-c943b0759e6d3d6139ff.js.map",
-      "cms.css.map"
-    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-c9b66458d84a50e94e2a.js",
-      "component---src-layouts-index-js-c9b66458d84a50e94e2a.js.map"
+      "component---src-layouts-index-js-8ad6a3f57e4dfcee4e3a.js",
+      "component---src-layouts-index-js-8ad6a3f57e4dfcee4e3a.js.map"
     ],
     "path---index": [
-      "path---index-a0e39f21c11f6a62c5ab.js",
-      "path---index-a0e39f21c11f6a62c5ab.js.map"
+      "path---index-e0b86ea3a27a6eb73ad5.js",
+      "path---index-e0b86ea3a27a6eb73ad5.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-8a17c297d1119d62d0f7.js",
-      "component---src-pages-404-js-8a17c297d1119d62d0f7.js.map"
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-266dbe961942be1142e0.js",
-      "commons-266dbe961942be1142e0.js.map"
+      "commons-b87576f4da6256ea0577.js",
+      "commons-b87576f4da6256ea0577.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-templates-post-js": [
+      "component---src-templates-post-js-ca991de6246f76370452.js",
+      "component---src-templates-post-js-ca991de6246f76370452.js.map"
+    ],
+    "path---post-first-post": [
+      "path---post-first-post-2e6c6e26f036d9826043.js",
+      "path---post-first-post-2e6c6e26f036d9826043.js.map"
+    ],
     "app": [
-      "app-d1067da0873e87283573.js",
-      "app-d1067da0873e87283573.js.map"
+      "app-85e6de05fca32b3952a8.js",
+      "app-85e6de05fca32b3952a8.js.map"
+    ],
+    "path---post-another-post": [
+      "path---post-another-post-b523e71a3fd981dbc2e2.js",
+      "path---post-another-post-b523e71a3fd981dbc2e2.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
