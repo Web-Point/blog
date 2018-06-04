@@ -8,6 +8,13 @@ module.exports = {
     'gatsby-plugin-react-next',
     'gatsby-plugin-netlify-cms',
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/posts`,
+        name: "posts",
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
