@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -6,13 +10,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-next',
-    'gatsby-plugin-netlify-cms',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-contentful',
       options: {
-        path: `${__dirname}/posts`,
-        name: "posts",
-      },
+        spaceId: process.env.CF_SPACE,
+        accessToken: process.env.CF_TOKEN
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
