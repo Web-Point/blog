@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 // import Link from 'gatsby-link'
 // import Header from '../components/header'
 
@@ -38,8 +38,9 @@
 //     </div>
 //   </div>
 // )
+const IndexPage = () => <h1>Hello</h1>
 
-// export default IndexPage
+export default IndexPage
 
 // export const pageQuery = graphql`
 //   query pageQuery {
