@@ -5,16 +5,27 @@ import Header from '../components/header'
 
 const Post = ({ data }) => {
   const { title, createdAt, image, content } = data.contentfulPost
-  return <div>
-      <Header title={title} image={image.resolutions.src} description={content.childMarkdownRemark.excerpt} />
+  return (
+    <div>
+      <Header
+        title={title}
+        image={image.resolutions}
+        description={content.childMarkdownRemark.excerpt}
+      />
       <article>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto" dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }} />
+            <div
+              class="col-lg-8 col-md-10 mx-auto"
+              dangerouslySetInnerHTML={{
+                __html: content.childMarkdownRemark.html,
+              }}
+            />
           </div>
         </div>
       </article>
     </div>
+  )
 }
 
 Post.PropTypes = {
@@ -29,8 +40,8 @@ export const pageQuery = graphql`
       title
       createdAt(formatString: "MMMM DD, YYYY")
       image {
-        resolutions(width: 800) {
-          src
+        resolutions(height: 200) {
+          ...GatsbyContentfulResolutions
         }
       }
       content {

@@ -11,17 +11,11 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-react-next',
     {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: process.env.CF_SPACE,
-        accessToken: process.env.CF_TOKEN
-      }
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           'gatsby-plugin-sharp',
+          'gatsby-transformer-sharp',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -29,6 +23,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CF_SPACE,
+        accessToken: process.env.CF_TOKEN,
       },
     },
   ],

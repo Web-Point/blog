@@ -1,14 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 const Header = ({ title, image, description }) => (
   <header
     className="masthead"
-    style={{
-      backgroundImage: `url(${image})`,
-    }}
-    // style="background-image: url('img/home-bg.jpg')"
-  >
+    // style={{
+    //   backgroundImage: `url(${image})`,
+    // }}
+  >  
+    {image != undefined && <Img
+      resolutions={image}
+      style={{
+        objectFit: 'cover',
+        width: '100%',
+        height: '100%',
+        position: 'absolute',
+      }}
+    />}
     <div className="overlay" />
     <div className="container">
       <div className="row">
